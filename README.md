@@ -20,9 +20,9 @@ Tests the web version can't run show the manual steps instead.
 ## Develop
 
 ```bash
-npm install
-npm run dev          # web version on http://localhost:5173
-npm run tauri dev    # desktop app
+bun install
+bun run dev          # web version on http://localhost:5173
+bun tauri dev        # desktop app
 ```
 
 Rust tests: `cd src-tauri && cargo test`. To print what the native commands

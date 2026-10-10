@@ -10,16 +10,13 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
+      - uses: oven-sh/setup-bun@v2
       - uses: dtolnay/rust-toolchain@stable
       - uses: swatinem/rust-cache@v2
         with:
           workspaces: src-tauri
-      - run: npm ci
-      - run: npx tauri build --bundles nsis
+      - run: bun install --frozen-lockfile
+      - run: bun tauri build --bundles nsis
       # The bare .exe runs from a USB stick (Windows 11 ships WebView2).
       - uses: actions/upload-artifact@v4
         with:
