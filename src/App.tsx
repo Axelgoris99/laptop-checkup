@@ -101,8 +101,12 @@ export default function App() {
   const index = TESTS.findIndex((t) => t.id === current)
   const test = TESTS[index]
   const result = (test && results[test.id]) ?? { status: 'pending' as const }
-  const setResult = (r: Result) => setResults((all) => ({ ...all, [test.id]: r }))
   const go = (i: number) => setCurrent(i >= TESTS.length ? 'summary' : TESTS[Math.max(0, i)].id)
+  const setResult = (r: Result) => {
+    setResults((all) => ({ ...all, [test.id]: r }))
+    // Passing a test moves on to the next one.
+    if (r.status === 'pass' && result.status !== 'pass') go(index + 1)
+  }
 
   return (
     <div className="app">
