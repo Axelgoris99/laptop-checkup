@@ -1,0 +1,8 @@
+# deploy.sh substitutes DOMAIN and DEPLOY_DIR, then drops it in CADDY_SITES_DIR.
+# Don't add a Permissions-Policy blocking camera/microphone: the tests need them.
+DOMAIN {
+    root * DEPLOY_DIR
+    file_server
+    encode gzip zstd
+    try_files {path} /index.html
+}
