@@ -5,6 +5,11 @@ A checklist app for inspecting a used laptop before buying it: keyboard, screen
 Bluetooth, battery wear, SSD health, BIOS password and company (Autopilot/Intune)
 locks. Tick each test, then copy a one-page report.
 
+**Try it:** [checkup.goris.live](https://checkup.goris.live) ·
+[GitHub Pages mirror](https://axelgoris99.github.io/laptop-checkup/) ·
+[Windows .exe](https://github.com/Axelgoris99/laptop-checkup/actions/workflows/desktop.yml)
+(latest *Desktop build* run → Artifacts)
+
 Two builds from one React UI:
 
 | | Web version | Desktop app (Tauri) |
