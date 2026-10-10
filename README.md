@@ -7,8 +7,13 @@ locks. Tick each test, then copy a one-page report.
 
 **Try it:** [checkup.goris.live](https://checkup.goris.live) ·
 [GitHub Pages mirror](https://axelgoris99.github.io/laptop-checkup/) ·
-[Windows .exe](https://github.com/Axelgoris99/laptop-checkup/actions/workflows/desktop.yml)
-(latest *Desktop build* run → Artifacts)
+[Windows .exe](https://github.com/Axelgoris99/laptop-checkup/releases/latest)
+
+![Summary with one failed check](docs/screenshots/summary.png)
+
+| Keyboard test | Charging per USB-C port |
+|---|---|
+| ![Keyboard test](docs/screenshots/keyboard.png) | ![Charging ports test](docs/screenshots/charging.png) |
 
 Two builds from one React UI:
 
@@ -35,8 +40,9 @@ return on your machine: `cargo test probe -- --ignored --nocapture`.
 
 ## Build
 
-- **Windows .exe**: run the *Desktop build* workflow (or push a `v*` tag). It
-  uploads a portable `laptop-checkup.exe` (runs from a USB stick) and an installer.
+- **Windows .exe**: push a `v*` tag. The *Desktop build* workflow attaches a
+  portable `laptop-checkup.exe` (runs from a USB stick) and an installer to a
+  GitHub Release. Running it manually only uploads them as run artifacts.
   Unsigned, so Windows SmartScreen will warn: *More info → Run anyway*.
 - **Web**: the *Web version* workflow publishes `dist/` to GitHub Pages.
 
