@@ -1,6 +1,6 @@
 [package]
 name = "laptop-checkup"
-version = "0.1.0"
+version = "0.1.1"
 description = "Hardware checklist for buying a used laptop"
 authors = ["Axel Goris"]
 edition = "2024"
@@ -11,12 +11,12 @@ name = "laptop_checkup_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]
-tauri-build = { version = "2.7.1" }
+tauri-build = { version = "2.7.1", features = [] }
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-tauri = { version = "2.12.1" }
+tauri = { version = "2.12.1", features = [] }
 sysinfo = "0.39"
 starship-battery = "0.12"
 nusb = "0.2"
