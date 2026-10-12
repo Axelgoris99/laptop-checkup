@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test clavier en ligne – Vérifier toutes les touches | Laptop Checkup</title>
+    <meta name="description" content="Testeur de clavier gratuit en ligne. Appuyez sur chaque touche et voyez-la s'allumer pour repérer les touches mortes, bloquées ou manquantes. AZERTY et QWERTY, directement dans le navigateur." />
+    <link rel="canonical" href="https://checkup.goris.live/fr/test-clavier/" />
+    <link rel="alternate" hreflang="fr" href="https://checkup.goris.live/fr/test-clavier/" />
+    <link rel="alternate" hreflang="en" href="https://checkup.goris.live/keyboard-test/" />
+    <link rel="alternate" hreflang="x-default" href="https://checkup.goris.live/keyboard-test/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Test clavier en ligne – Vérifier toutes les touches" />
+    <meta property="og:description" content="Appuyez sur chaque touche et voyez-la s'allumer pour repérer les touches mortes ou bloquées. Gratuit, dans le navigateur." />
+    <meta property="og:url" content="https://checkup.goris.live/fr/test-clavier/" />
+    <script defer src="https://umami.goris.live/script.js" data-website-id="65f9dbff-2b67-4057-a0fd-c8403b23a15c" data-domains="checkup.goris.live,axelgoris99.github.io"></script>
+  </head>
+  <body>
+    <main class="page">
+      <nav class="topbar">
+        <a class="brand" href="../../">Laptop Checkup</a>
+        <a href="../test-clavier/" aria-current="page">Test clavier</a>
+        <a href="../test-pixels-morts/">Test pixels morts</a>
+        <a href="../test-webcam/">Test webcam</a>
+        <a href="../../keyboard-test/" hreflang="en" lang="en">EN</a>
+      </nav>
+
+      <header>
+        <h1>Test clavier</h1>
+        <p class="lead">Appuyez sur chaque touche : elle passe au vert dès qu'elle est détectée. Gratuit, rien à installer, rien ne sort de votre navigateur.</p>
+      </header>
+
+      <section class="test" id="tool" data-test="keyboard">
+        <noscript>Ce test de clavier a besoin de JavaScript.</noscript>
+      </section>
+
+      <p class="cta">
+        Vous achetez un PC portable d'occasion ? Le clavier n'est qu'un des 17 points du
+        <a href="../../">Laptop Checkup</a>, gratuit : usure de la batterie, pixels morts, ports, blocage
+        entreprise… avec un rapport à copier à la fin.
+      </p>
+
+      <article class="prose">
+        <h2>Comment l'utiliser</h2>
+        <ol>
+          <li>Cliquez n'importe où sur la page pour qu'elle reçoive les frappes.</li>
+          <li>Appuyez une fois sur chaque touche. Celles qui fonctionnent passent au vert et le compteur monte.</li>
+          <li>Une touche qui reste bleue après l'avoir relâchée est bloquée.</li>
+          <li>Faites un clic droit sur une touche que votre clavier n'a pas (pavé numérique, touches en plus) pour la griser. Le compteur l'ignore alors.</li>
+          <li>Choisissez AZERTY ou QWERTY pour que les libellés correspondent à votre clavier.</li>
+        </ol>
+
+        <h2>Ce qu'il faut vérifier</h2>
+        <ul>
+          <li><b>Touches mortes :</b> rien ne s'allume, même en appuyant fort.</li>
+          <li><b>Touches dures</b>, ou qui ne marchent qu'au centre : souvent de la saleté ou un mécanisme usé.</li>
+          <li><b>Lettres doublées :</b> tapez une phrase dans le champ de note sous le clavier. Une touche qui tape deux fois est défectueuse.</li>
+          <li><b>Rétroéclairage</b> à tous les niveaux, et les raccourcis Fn pour le volume et la luminosité.</li>
+          <li><b>Touches lustrées ou effacées :</b> elles montrent à quel point l'ordinateur a servi, quoi qu'en dise le vendeur.</li>
+        </ul>
+
+        <h2>Questions</h2>
+        <h3>La touche Fn ne s'allume jamais. Elle est cassée ?</h3>
+        <p>Non. La touche Fn est gérée par l'ordinateur lui-même et n'arrive jamais jusqu'au navigateur. Testez-la avec ses raccourcis : Fn + volume ou luminosité doivent fonctionner.</p>
+        <h3>Impr. écran ou la touche Windows ne font rien</h3>
+        <p>Le système peut intercepter certaines touches avant le navigateur. Impr. écran n'est souvent détectée qu'au relâchement, et le test l'écoute aussi. Si une touche ne réagit toujours pas, vérifiez qu'elle fonctionne dans Windows.</p>
+        <h3>Ce que je tape est-il envoyé quelque part ?</h3>
+        <p>Non. Le test tourne entièrement dans votre navigateur et n'enregistre rien.</p>
+      </article>
+
+      <p class="page-links muted small">
+        Autres tests gratuits : <a href="../test-pixels-morts/">test pixels morts</a> · <a href="../test-webcam/">test webcam</a> ·
+        <a href="../../">vérification complète d'un PC portable d'occasion</a>
+      </p>
+    </main>
+    <script type="module" src="/src/standalone.tsx"></script>
+  </body>
+</html>

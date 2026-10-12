@@ -36,7 +36,8 @@ const ALL_CODES = [...new Set(ROWS.flat().map((key) => key.code))]
 
 export function Keyboard({ result, setResult }: TestProps) {
   const [layout, setLayout] = useState<'qwerty' | 'azerty'>(() =>
-    navigator.language.startsWith('fr') ? 'azerty' : 'qwerty',
+    // French page or French browser: most likely an AZERTY keyboard.
+    [document.documentElement.lang, navigator.language].some((l) => l.startsWith('fr')) ? 'azerty' : 'qwerty',
   )
   const [pressed, setPressed] = useState<Set<string>>(new Set())
   const [down, setDown] = useState<Set<string>>(new Set())

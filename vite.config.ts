@@ -3,7 +3,10 @@ import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 
 // The full checkup plus one page per standalone test (for search engines).
-const PAGES = ['keyboard-test', 'dead-pixel-test', 'webcam-test']
+const PAGES = [
+  'keyboard-test', 'dead-pixel-test', 'webcam-test',
+  'fr/test-clavier', 'fr/test-pixels-morts', 'fr/test-webcam',
+]
 
 export default defineConfig({
   plugins: [react()],
