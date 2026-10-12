@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard Test Online – Check Every Key Works | Laptop Checkup</title>
+    <meta name="description" content="Free online keyboard tester. Press each key and watch it light up to find dead, stuck or missing keys. AZERTY and QWERTY layouts, runs in your browser." />
+    <link rel="canonical" href="https://checkup.goris.live/keyboard-test/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Keyboard Test Online – Check Every Key Works" />
+    <meta property="og:description" content="Press each key and watch it light up to find dead, stuck or missing keys. Free, in your browser." />
+    <meta property="og:url" content="https://checkup.goris.live/keyboard-test/" />
+    <script defer src="https://umami.goris.live/script.js" data-website-id="65f9dbff-2b67-4057-a0fd-c8403b23a15c" data-domains="checkup.goris.live,axelgoris99.github.io"></script>
+  </head>
+  <body>
+    <main class="page">
+      <nav class="topbar">
+        <a class="brand" href="../">Laptop Checkup</a>
+        <a href="../keyboard-test/" aria-current="page">Keyboard test</a>
+        <a href="../dead-pixel-test/">Dead pixel test</a>
+        <a href="../webcam-test/">Webcam test</a>
+      </nav>
+
+      <header>
+        <h1>Keyboard test</h1>
+        <p class="lead">Press every key: each one turns green when it registers. Free, nothing to install, nothing leaves your browser.</p>
+      </header>
+
+      <section class="test" id="tool" data-test="keyboard">
+        <noscript>This keyboard test needs JavaScript turned on.</noscript>
+      </section>
+
+      <p class="cta">
+        Buying a used laptop? The keyboard is one of 17 checks in the free
+        <a href="../">Laptop Checkup</a>: battery wear, dead pixels, ports, company locks and more, with a
+        report you can copy at the end.
+      </p>
+
+      <article class="prose">
+        <h2>How to use it</h2>
+        <ol>
+          <li>Click anywhere on the page so it receives your key presses.</li>
+          <li>Press every key once. Keys that work turn green and the counter goes up.</li>
+          <li>A key that stays blue after you let go is stuck.</li>
+          <li>Right-click a key your keyboard doesn't have (numpad, extra keys) to grey it out. The counter then ignores it.</li>
+          <li>Switch between AZERTY and QWERTY so the labels match the keys printed on your keyboard.</li>
+        </ol>
+
+        <h2>What to look for</h2>
+        <ul>
+          <li><b>Dead keys:</b> nothing lights up, even after a firm press.</li>
+          <li><b>Keys that need a hard press</b>, or only work when hit in the middle: usually dirt or a worn switch.</li>
+          <li><b>Double letters:</b> type a sentence in the note field below the keyboard. A key that types twice is "chattering".</li>
+          <li><b>Backlight</b> at every brightness level, and the Fn shortcuts for volume and brightness.</li>
+          <li><b>Shiny or worn keycaps</b> show how much the laptop was used, whatever the seller says.</li>
+        </ul>
+
+        <h2>Questions</h2>
+        <h3>The Fn key never lights up. Is it broken?</h3>
+        <p>No. Fn is handled by the laptop itself and never reaches the browser. Test it with its shortcuts instead: Fn plus the volume or brightness keys should work.</p>
+        <h3>Print Screen or the Windows key do nothing</h3>
+        <p>The operating system can catch some keys before the browser sees them. Print Screen often only registers when released; the test listens for that too. If a key still does nothing here, check it works in Windows itself.</p>
+        <h3>Is what I type sent anywhere?</h3>
+        <p>No. The test runs entirely in your browser and records nothing.</p>
+      </article>
+
+      <p class="page-links muted small">
+        Other free tests: <a href="../dead-pixel-test/">dead pixel test</a> · <a href="../webcam-test/">webcam test</a> ·
+        <a href="../">full used-laptop checkup</a>
+      </p>
+    </main>
+    <script type="module" src="/src/standalone.tsx"></script>
+  </body>
+</html>

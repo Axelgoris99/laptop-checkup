@@ -53,6 +53,8 @@ Run the desktop app **as administrator** to read SSD wear and temperature.
 ```
 src/core/       types, Tauri bindings (native.ts), media helpers
 src/tests/      one component per check, registered in tests/index.ts
+src/standalone.tsx  mounts one test on a single-test page (keyboard-test/, …):
+                static HTML with SEO text, listed in vite.config.ts and sitemap.xml
 src-tauri/src/  system.rs (specs, battery, disks, BIOS, Windows status)
                 devices.rs (USB, Wi-Fi, Bluetooth), shell.rs (PowerShell helper)
 ```

@@ -139,6 +139,12 @@ export default function App() {
             Summary
           </button>
         </nav>
+        {!isDesktop && (
+          <p className="tools small">
+            Single tests: <a href="keyboard-test/">keyboard</a> · <a href="dead-pixel-test/">dead pixels</a> ·{' '}
+            <a href="webcam-test/">webcam</a>
+          </p>
+        )}
       </aside>
       <main>
         {test ? (

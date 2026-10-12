@@ -35,7 +35,9 @@ const LABELS: Record<string, Record<string, string>> = {
 const ALL_CODES = [...new Set(ROWS.flat().map((key) => key.code))]
 
 export function Keyboard({ result, setResult }: TestProps) {
-  const [layout, setLayout] = useState<'qwerty' | 'azerty'>('azerty')
+  const [layout, setLayout] = useState<'qwerty' | 'azerty'>(() =>
+    navigator.language.startsWith('fr') ? 'azerty' : 'qwerty',
+  )
   const [pressed, setPressed] = useState<Set<string>>(new Set())
   const [down, setDown] = useState<Set<string>>(new Set())
   const [absent, setAbsent] = useState<Set<string>>(new Set())

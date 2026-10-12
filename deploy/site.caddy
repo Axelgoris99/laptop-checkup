@@ -4,5 +4,5 @@ DOMAIN {
     root * DEPLOY_DIR
     file_server
     encode gzip zstd
-    try_files {path} /index.html
+    try_files {path} {path}/ /index.html
 }
